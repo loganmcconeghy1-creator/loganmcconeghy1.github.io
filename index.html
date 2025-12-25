@@ -3,159 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Reavencreast Sports Cards - The premier destination for elite, graded sports card investments and rare collectibles. New 2025 collection coming soon.">
-    <title>Reavencreast Sports Cards | Premium Collectibles</title>
-    
-    <!-- Modern Luxury Typography -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Reavencreast Sports Cards</title>
     <link href="fonts.googleapis.com" rel="stylesheet">
-    
     <style>
-        :root {
-            --gold: #d4af37;
-            --dark-bg: #050505;
-            --surface: #0f0f12;
-            --text-light: #f1f1f1;
-            --text-dim: #a0a0a5;
-            --transition: all 0.5s ease;
+        :root { --gold: #d4af37; --bg: #050505; }
+        body, html { 
+            margin: 0; padding: 0; height: 100%; 
+            display: flex; justify-content: center; align-items: center;
+            background-color: var(--bg); font-family: 'Inter', sans-serif;
+            color: #fff; overflow: hidden;
         }
-
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            font-family: 'Inter', sans-serif;
-            background-color: var(--dark-bg);
-            color: var(--text-light);
-            display: flex;
-            flex-direction: column;
-            overflow-x: hidden;
+        .card {
+            width: 350px; padding: 40px; text-align: center;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            background: linear-gradient(145deg, #0a0a0a, #111);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
         }
-
-        header {
-            padding: 2rem 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+        h1 { 
+            font-family: 'Cinzel', serif; color: var(--gold); 
+            letter-spacing: 4px; font-size: 1.5rem; margin: 0 0 10px;
         }
-
-        .brand-logo {
-            font-family: 'Cinzel', serif;
-            font-size: 1.8rem;
-            letter-spacing: 3px;
-            color: var(--gold);
-            text-decoration: none;
-        }
-
-        main {
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 0 10%;
-        }
-
-        .hero-title {
-            font-family: 'Cinzel', serif;
-            font-size: clamp(2.5rem, 8vw, 5rem);
-            margin-bottom: 0.5rem;
-            background: linear-gradient(to right, #fff, var(--gold), #fff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .hero-subtitle {
-            font-size: 1.2rem;
-            color: var(--text-dim);
-            letter-spacing: 2px;
-            max-width: 600px;
-            line-height: 1.8;
-            margin-bottom: 3rem;
-        }
-
-        .cta-container {
-            display: flex;
-            gap: 1.5rem;
-        }
-
+        p { font-size: 0.8rem; letter-spacing: 2px; color: #888; margin-bottom: 30px; }
+        .links { display: flex; flex-direction: column; gap: 15px; }
         .btn {
-            padding: 1rem 2.5rem;
-            border: 1px solid var(--gold);
-            border-radius: 2px;
-            text-decoration: none;
-            font-weight: 600;
-            letter-spacing: 1px;
-            transition: var(--transition);
+            text-decoration: none; color: #fff; font-size: 0.85rem;
+            padding: 12px; border: 1px solid rgba(255,255,255,0.1);
+            transition: 0.3s; letter-spacing: 1px;
         }
-
-        .btn-primary {
-            background: var(--gold);
-            color: var(--dark-bg);
-        }
-
-        .btn-primary:hover {
-            background: transparent;
-            color: var(--gold);
-        }
-
-        .btn-secondary {
-            color: var(--gold);
-        }
-
-        .btn-secondary:hover {
-            background: rgba(212, 175, 55, 0.05);
-        }
-
-        footer {
-            padding: 3rem 5%;
-            text-align: center;
-            border-top: 1px solid rgba(255,255,255,0.05);
-            font-size: 0.8rem;
-            color: var(--text-dim);
-        }
-
-        /* Subtle 2025 Background Animation */
-        .bg-mesh {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            background: radial-gradient(circle at 50% 50%, #111115 0%, #050505 100%);
-        }
+        .btn:hover { border-color: var(--gold); color: var(--gold); background: rgba(212,175,55,0.05); }
+        .footer { margin-top: 40px; font-size: 0.65rem; color: #444; letter-spacing: 1px; }
     </style>
 </head>
 <body>
-
-    <div class="bg-mesh"></div>
-
-    <header>
-        <a href="#" class="brand-logo">REAVENCREAST</a>
-        <div style="font-size: 0.9rem; letter-spacing: 1px;">EST. 2025</div>
-    </header>
-
-    <main>
-        <h1 class="hero-title">Elite Sports Cards</h1>
-        <p class="hero-subtitle">
-            Specializing in high-yield assets, graded legends, and the future stars of the hobby. Our curated 2025 collection is currently in vault preparation.
-        </p>
-
-        <div class="cta-container">
-            <a href="mailto:contact@reavencreast.com" class="btn btn-primary">Inquire Privately</a>
-            <a href="instagram.com" class="btn btn-secondary">Follow Drops</a>
+    <div class="card">
+        <h1>REAVENCREAST</h1>
+        <p>ELITE SPORTS COLLECTIBLES</p>
+        <div class="links">
+            <a href="mailto:contact@reavencreast.com" class="btn">INQUIRE PRIVATELY</a>
+            <a href="instagram.com" class="btn">INSTAGRAM</a>
         </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Reavencreast Sports Cards. All rights reserved.</p>
-        <p>Premium Graded Investments | PSA • BGS • SGC</p>
-    </footer>
-
+        <div class="footer">EST. 2025 • PSA • BGS • SGC</div>
+    </div>
 </body>
 </html>
+
+
+
+
 
