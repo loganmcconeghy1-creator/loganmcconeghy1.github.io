@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Athlete | Browse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="browse.html">Browse</a>
+        <a href="purchase.html">Purchase</a>
+    </nav>
+
+    <div class="container">
+        <h1>Browse Collection</h1>
+        <p>Use the arrows to flip through our available inventory.</p>
+
+        <div class="slider-container">
+            <img src="https://via.placeholder.com/400x500/111111/D4AF37?text=Card+1" class="active" alt="Sports Card 1">
+            <img src="https://via.placeholder.com/400x500/111111/D4AF37?text=Card+2" alt="Sports Card 2">
+            <img src="https://via.placeholder.com/400x500/111111/D4AF37?text=Card+3" alt="Sports Card 3">
+            
+            <button class="slider-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="slider-btn next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slider-container img');
+
+        function changeSlide(direction) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + direction + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
